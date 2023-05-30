@@ -89,7 +89,7 @@ res.sendStatus(202);
   app.post('/api/booking', async (req, res) => {
     const bookingData = req.body;
 
-let d = await Booking.insertMany([{bookingData}])
+let d = await Booking.insertMany([bookingData])
 
 res.sendStatus(201);
   });
